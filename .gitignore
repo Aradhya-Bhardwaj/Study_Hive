@@ -31,3 +31,12 @@ dist-ssr
 
 # Private Keys
 *.pem
+
+# Project-specific files to exclude from repo
+Study-Hive-Cloud-Architecture-Implementation-Plan.md
+context.md
+prompt.txt
+verify_sqlite_metrics.js
+e2e_test.js
+Combinatorial.html
+extracted_sections.json
