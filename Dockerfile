@@ -8,8 +8,8 @@ WORKDIR /app
 # Copy dependency specifications
 COPY package.json package-lock.json ./
 
-# Clean installation of locked dependencies
-RUN npm ci
+# Installation of dependencies
+RUN npm install
 
 # Copy all application files
 COPY . .
