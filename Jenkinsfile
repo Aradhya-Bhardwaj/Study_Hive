@@ -10,6 +10,7 @@ pipeline {
         // Deployment paths
         K8S_MANIFEST_DIR = 'k8s'
         APP_PORT        = '80'
+        KUBECONFIG      = '/var/lib/jenkins/.kube/config'
     }
 
     stages {
