@@ -1,0 +1,8 @@
+/* BUNDLED APP STYLES */
+@import './styles/variables.css';
+@import './styles/base.css';
+@import './styles/auth.css';
+@import './styles/dashboard.css';
+@import './styles/subject.css';
+@import './styles/components.css';
+@import './styles/simulators.css';

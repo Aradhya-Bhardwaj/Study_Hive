@@ -1,0 +1,225 @@
+/* INTERACTIVE SIMULATORS STYLINGS */
+
+.simulator-panel {
+  margin-top: 32px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--border-radius-lg);
+  padding: 24px;
+}
+
+.simulator-title {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 12px;
+}
+
+/* Flex layout grids for simulator controls and graphs */
+.simulator-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.simulator-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.simulator-control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.simulator-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.simulator-input {
+  width: 100%;
+}
+
+.simulator-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.simulator-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  transition: transform 0.1s ease;
+}
+
+.simulator-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Visualization Containers */
+.simulator-visualization {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius-md);
+  padding: 20px;
+  border: 1px solid var(--border-glass);
+  position: relative;
+  overflow: hidden;
+}
+
+.simulator-svg-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Gantt Chart Custom Classes */
+.gantt-bar {
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.gantt-bar:hover {
+  filter: brightness(1.15);
+}
+
+/* Tables in Simulators */
+.simulator-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.simulator-table th, .simulator-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.simulator-table th {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.simulator-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Subnet Bit Visualizer Grid */
+.subnet-bits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+}
+
+.subnet-bit-box {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  border-radius: var(--border-radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+}
+
+.subnet-bit-box.net-bit {
+  background: var(--accent-primary-glow);
+  color: #818cf8;
+  border-color: var(--accent-primary);
+}
+
+.subnet-bit-box.host-bit {
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Matrix input grid solver styles */
+.matrix-grid {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+  max-width: max-content;
+}
+
+.matrix-cell {
+  width: 60px;
+  height: 48px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+}
+
+.matrix-bracket-left, .matrix-bracket-right {
+  border-top: 2px solid var(--text-primary);
+  border-bottom: 2px solid var(--text-primary);
+  width: 8px;
+}
+
+.matrix-bracket-left { border-left: 2px solid var(--text-primary); }
+.matrix-bracket-right { border-right: 2px solid var(--text-primary); }
+
+.matrix-solve-steps {
+  max-height: 250px;
+  overflow-y: auto;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-glass);
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Physics simulator controls and trajectories */
+.physics-stats-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 14px;
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--border-glass);
+  z-index: 5;
+}
+
+.physics-stat-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.physics-stat-val {
+  color: var(--accent-secondary);
+  font-weight: 600;
+}

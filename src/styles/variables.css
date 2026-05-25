@@ -1,0 +1,167 @@
+/* PREMIUM DESIGN SYSTEM — StudyHive */
+
+:root {
+  /* ── Background Layers ── */
+  --bg-primary:     #070b14;
+  --bg-secondary:   #0d1525;
+  --bg-tertiary:    #111827;
+  --bg-glass:       rgba(15, 23, 42, 0.72);
+  --bg-glass-hover: rgba(17, 27, 50, 0.90);
+  --bg-surface:     rgba(255, 255, 255, 0.030);
+  --bg-surface-hover: rgba(255, 255, 255, 0.055);
+
+  /* ── Borders ── */
+  --border-glass:   rgba(255, 255, 255, 0.07);
+  --border-subtle:  rgba(255, 255, 255, 0.04);
+  --border-accent:  rgba(99, 102, 241, 0.35);
+
+  /* ── Text ── */
+  --text-primary:   #f1f5f9;
+  --text-secondary: #8b9ab5;
+  --text-muted:     #4d607a;
+  --text-disabled:  #2e3f55;
+
+  /* ── Accent Palette ── */
+  --accent-primary:       #6366f1;
+  --accent-primary-light: #818cf8;
+  --accent-primary-glow:  rgba(99, 102, 241, 0.18);
+  --accent-primary-glow-strong: rgba(99, 102, 241, 0.35);
+  --accent-secondary:     #06b6d4;
+  --accent-success:       #10b981;
+  --accent-success-glow:  rgba(16, 185, 129, 0.15);
+  --accent-warning:       #f59e0b;
+  --accent-warning-glow:  rgba(245, 158, 11, 0.15);
+  --accent-error:         #f43f5e;
+  --accent-error-glow:    rgba(244, 63, 94, 0.15);
+
+  /* ── Subject Brand Colors ── */
+  --color-os:         #f59e0b;
+  --color-networking: #06b6d4;
+  --color-dbms:       #10b981;
+  --color-oop:        #a78bfa;
+  --color-coa:        #f43f5e;
+
+  /* ── Shadows ── */
+  --shadow-xs:  0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-sm:  0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md:  0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg:  0 12px 32px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-xl:  0 24px 48px rgba(0, 0, 0, 0.7), 0 8px 16px rgba(0, 0, 0, 0.4);
+  --shadow-glow-primary: 0 0 32px rgba(99, 102, 241, 0.25);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.05);
+
+  /* ── Typography ── */
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', var(--font-sans);
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Motion ── */
+  --ease-spring:     cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.12s ease;
+  --transition-base: 0.22s var(--ease-out);
+  --transition-slow: 0.45s var(--ease-out);
+
+  /* ── Radii ── */
+  --radius-xs:  4px;
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  18px;
+  --radius-xl:  24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* Legacy aliases for backward compat */
+  --border-radius-sm:  var(--radius-sm);
+  --border-radius-md:  var(--radius-md);
+  --border-radius-lg:  var(--radius-lg);
+  --border-radius-xl:  var(--radius-xl);
+  --transition-normal: var(--transition-base);
+}
+
+/* ── LIGHT THEME ── */
+[data-theme='light'] {
+  --bg-primary:     #f8fafc;
+  --bg-secondary:   #ffffff;
+  --bg-tertiary:    #f1f5f9;
+  --bg-glass:       rgba(255, 255, 255, 0.80);
+  --bg-glass-hover: rgba(255, 255, 255, 0.95);
+  --bg-surface:     rgba(0, 0, 0, 0.025);
+  --bg-surface-hover: rgba(0, 0, 0, 0.045);
+  --border-glass:   rgba(0, 0, 0, 0.07);
+  --border-subtle:  rgba(0, 0, 0, 0.04);
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-muted:     #94a3b8;
+  --text-disabled:  #cbd5e1;
+  --accent-primary:       #4f46e5;
+  --accent-primary-light: #6366f1;
+  --accent-primary-glow:  rgba(79, 70, 229, 0.12);
+  --accent-primary-glow-strong: rgba(79, 70, 229, 0.22);
+  --shadow-lg:  0 4px 24px rgba(0,0,0,0.10);
+  --shadow-glass: 0 4px 24px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.7);
+}
+
+/* ── SEPIA THEME ── */
+[data-theme='sepia'] {
+  --bg-primary:     #f3ead6;
+  --bg-secondary:   #faf5e8;
+  --bg-tertiary:    #ede4cc;
+  --bg-glass:       rgba(250, 245, 232, 0.82);
+  --bg-glass-hover: rgba(250, 245, 232, 0.96);
+  --bg-surface:     rgba(70, 50, 20, 0.04);
+  --bg-surface-hover: rgba(70, 50, 20, 0.08);
+  --border-glass:   rgba(100, 80, 40, 0.10);
+  --border-subtle:  rgba(100, 80, 40, 0.05);
+  --text-primary:   #3b2f18;
+  --text-secondary: #5c4a2a;
+  --text-muted:     #8c7850;
+  --text-disabled:  #c4b08a;
+  --accent-primary:       #b45309;
+  --accent-primary-light: #d97706;
+  --accent-primary-glow:  rgba(180, 83, 9, 0.15);
+  --accent-primary-glow-strong: rgba(180, 83, 9, 0.28);
+  --accent-secondary:     #0369a1;
+  --shadow-glass: 0 4px 24px rgba(100,80,40,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 var(--accent-primary-glow-strong); }
+  50%       { box-shadow: 0 0 0 8px rgba(99, 102, 241, 0); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes highlight-pulse {
+  0%, 100% { background-color: var(--accent-primary-glow); outline: 2px solid var(--accent-primary); }
+  50%       { background-color: transparent; outline: 2px solid transparent; }
+}
+
+@keyframes progressFill {
+  from { width: 0%; }
+  to   { width: var(--target-width, 100%); }
+}
